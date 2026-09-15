@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "channels": [
+    { "id": "12-kanal-omsk-hd", "name": "12 канал Омск HD", "group": "Омск HD", "epgId": "12kanal", "sources": [{ "url": "https://example.com/12kanal-1080.m3u8", "quality": "1080p", "priority": 1 }, { "url": "https://example.com/12kanal-720.m3u8", "quality": "720p", "priority": 2 }] },
+    { "id": "perviy-hd-plus3", "name": "Первый HD +3", "group": "Омск HD", "epgId": "perviy", "sources": [{ "url": "https://example.com/perviy-plus3-1080.m3u8", "quality": "1080p", "priority": 1 }, { "url": "https://example.com/perviy-720.m3u8", "quality": "720p", "priority": 2 }] },
+    { "id": "rossiya1-hd-plus3", "name": "Россия 1 HD +3", "group": "Омск HD", "epgId": "russia1", "sources": [{ "url": "https://example.com/russia1-plus3-1080.m3u8", "quality": "1080p", "priority": 1 }, { "url": "https://example.com/russia1-720.m3u8", "quality": "720p", "priority": 2 }] },
+    { "id": "ntv-hd-plus3", "name": "НТВ HD +3", "group": "Омск HD", "epgId": "ntv", "sources": [{ "url": "https://example.com/ntv-plus3-1080.m3u8", "quality": "1080p", "priority": 1 }, { "url": "https://example.com/ntv-720.m3u8", "quality": "720p", "priority": 2 }] },
+    { "id": "sts-hd-plus3", "name": "СТС HD +3", "group": "Омск HD", "epgId": "ctc", "sources": [{ "url": "https://example.com/sts-plus3-1080.m3u8", "quality": "1080p", "priority": 1 }, { "url": "https://example.com/sts-720.m3u8", "quality": "720p", "priority": 2 }] },
+    { "id": "tnt-hd-plus3", "name": "ТНТ HD +3", "group": "Омск HD", "epgId": "tnt", "sources": [{ "url": "https://example.com/tnt-plus3-1080.m3u8", "quality": "1080p", "priority": 1 }, { "url": "https://example.com/tnt-720.m3u8", "quality": "720p", "priority": 2 }] },
+    { "id": "pyatnitsa-hd-plus3", "name": "Пятница HD +3", "group": "Омск HD", "epgId": "pyatnitsa", "sources": [{ "url": "https://example.com/pyatnitsa-plus3-1080.m3u8", "quality": "1080p", "priority": 1 }, { "url": "https://example.com/pyatnitsa-720.m3u8", "quality": "720p", "priority": 2 }] },
+    { "id": "match-tv-hd", "name": "Матч ТВ HD", "group": "Спорт", "epgId": "matchtv", "sources": [{ "url": "https://example.com/match-1080.m3u8", "quality": "1080p", "priority": 1 }, { "url": "https://example.com/match-720.m3u8", "quality": "720p", "priority": 2 }] },
+    { "id": "khl-hd", "name": "КХЛ HD", "group": "Спорт", "epgId": "khl", "sources": [{ "url": "https://example.com/khl-1080.m3u8", "quality": "1080p", "priority": 1 }, { "url": "https://example.com/khl-720.m3u8", "quality": "720p", "priority": 2 }] },
+    { "id": "khl-prime-hd", "name": "KHL Prime HD", "group": "Спорт", "epgId": "khlprime", "sources": [{ "url": "https://example.com/khlprime-1080.m3u8", "quality": "1080p", "priority": 1 }, { "url": "https://example.com/khlprime-720.m3u8", "quality": "720p", "priority": 2 }] }
+  ]
+}
