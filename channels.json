@@ -1,7 +1,7 @@
 {
   "version": 1,
   "channels": [
-    { "id": "12-kanal-omsk-hd", "name": "12 канал Омск HD", "group": "Омск HD", "epgId": "12kanal", "sources": [{ "url": "https://example.com/12kanal-1080.m3u8", "quality": "1080p", "priority": 1 }, { "url": "https://example.com/12kanal-720.m3u8", "quality": "720p", "priority": 2 }] },
+    { "id": "12-kanal-omsk-hd", "name": "12 канал Омск HD", "group": "Омск HD", "epgId": "12kanal", "sources": [{ "url": "https://gtrkomsk-live.cdnvideo.ru/gtrkomsk/gtrkomsk.smil/playlist.m3u8", "quality": "720p", "priority": 1 }] },
     { "id": "perviy-hd-plus3", "name": "Первый HD +3", "group": "Омск HD", "epgId": "perviy", "sources": [{ "url": "https://example.com/perviy-plus3-1080.m3u8", "quality": "1080p", "priority": 1 }, { "url": "https://example.com/perviy-720.m3u8", "quality": "720p", "priority": 2 }] },
     { "id": "rossiya1-hd-plus3", "name": "Россия 1 HD +3", "group": "Омск HD", "epgId": "russia1", "sources": [{ "url": "https://example.com/russia1-plus3-1080.m3u8", "quality": "1080p", "priority": 1 }, { "url": "https://example.com/russia1-720.m3u8", "quality": "720p", "priority": 2 }] },
     { "id": "ntv-hd-plus3", "name": "НТВ HD +3", "group": "Омск HD", "epgId": "ntv", "sources": [{ "url": "https://example.com/ntv-plus3-1080.m3u8", "quality": "1080p", "priority": 1 }, { "url": "https://example.com/ntv-720.m3u8", "quality": "720p", "priority": 2 }] },
