@@ -1,15 +1,548 @@
 {
-  "version": 2,
+  "version": 3,
   "channels": [
-    { "id": "12-kanal-omsk-hd", "name": "12 канал Омск HD", "group": "Омск HD", "epgId": "12kanal", "sources": [{ "url": "https://gtrkomsk-live.cdnvideo.ru/gtrkomsk/gtrkomsk.smil/playlist.m3u8", "quality": "720p", "priority": 1 }] },
-    { "id": "perviy-hd-plus3", "name": "Первый HD", "group": "Омск HD", "epgId": "perviy", "sources": [{ "url": "https://edge1.1internet.tv/dash-live2/streams/1tv-dvr/1tvdash.mpd", "quality": "720p", "priority": 1 }, { "url": "https://edge2.1internet.tv/dash-live2/streams/1tv/1tvdash.mpd", "quality": "720p", "priority": 2 }] },
-    { "id": "rossiya1-hd-plus3", "name": "Россия 1 HD +3", "group": "Омск HD", "epgId": "russia1", "sources": [{ "url": "https://live.smotrim.ru/vgtrk/3/russia1-hd/index.m3u8", "quality": "1080p", "priority": 1 }, { "url": "https://live.smotrim.ru/vgtrk/0/russia1-hd/index.m3u8", "quality": "1080p", "priority": 2 }, { "url": "https://stream.smotrim.ru/hls2/russia_hd/playlist.m3u8", "quality": "1080p", "priority": 3 }] },
-    { "id": "ntv-hd-plus3", "name": "НТВ HD", "group": "Омск HD", "epgId": "ntv", "sources": [{ "url": "https://cdn.ntv.ru/ntv0_hd/playlist.m3u8", "quality": "1080p", "priority": 1 }, { "url": "https://cdn-dvr.ntv.ru/ntv0_hd/index.m3u8", "quality": "1080p", "priority": 2 }, { "url": "https://flussonic.linkintel.ru/ntv/index.m3u8", "quality": "1080p", "priority": 3 }] },
-    { "id": "sts-hd-plus3", "name": "СТС", "group": "Омск HD", "epgId": "ctc", "sources": [{ "url": "https://tshift-1.telecoma.tv/sts/index.m3u8", "quality": "576p", "priority": 1 }, { "url": "https://tshift-2.telecoma.tv/sts/index.m3u8", "quality": "576p", "priority": 2 }, { "url": "https://flussonic.linkintel.ru/sts/index.m3u8", "quality": "576p", "priority": 3 }] },
-    { "id": "tnt-hd-plus3", "name": "ТНТ", "group": "Омск HD", "epgId": "tnt", "sources": [{ "url": "https://flussonic.linkintel.ru/tnt/index.m3u8", "quality": "576p", "priority": 1 }] },
-    { "id": "pyatnitsa-hd-plus3", "name": "Пятница", "group": "Омск HD", "epgId": "pyatnitsa", "sources": [{ "url": "https://vod.tuva.ru/friday/index.m3u8", "quality": "576p", "priority": 1 }, { "url": "https://flussonic.linkintel.ru/Pyatnica/index.m3u8", "quality": "576p", "priority": 2 }] },
-    { "id": "match-tv-hd", "name": "Матч ТВ", "group": "Спорт", "epgId": "matchtv", "sources": [{ "url": "https://fs.uplink.kz/match/index.m3u8?token=onlinetv", "quality": "576p", "priority": 1 }, { "url": "https://fs.uplink.kz/match/mono.m3u8?token=onlinetv", "quality": "576p", "priority": 2 }] },
-    { "id": "khl-hd", "name": "КХЛ", "group": "Спорт", "epgId": "khl", "sources": [{ "url": "https://fs.uplink.kz/telekanal_khl/index.m3u8?token=onlinetv", "quality": "576p", "priority": 1 }, { "url": "https://fs.uplink.kz/telekanal_khl/mono.m3u8?token=onlinetv", "quality": "576p", "priority": 2 }] },
-    { "id": "khl-prime-hd", "name": "KHL Prime HD", "group": "Спорт", "epgId": "khlprime", "sources": [{ "url": "https://fs.uplink.kz/khl_prime/index.m3u8?token=onlinetv", "quality": "1080p", "priority": 1 }, { "url": "https://fs.uplink.kz/khl_prime/mono.m3u8?token=onlinetv", "quality": "1080p", "priority": 2 }] }
+    {
+      "id": "12-kanal-omsk-hd",
+      "name": "12 канал Омск HD",
+      "group": "Омск HD",
+      "epgId": "12kanal",
+      "sources": [
+        {
+          "url": "https://gtrkomsk-live.cdnvideo.ru/gtrkomsk/gtrkomsk.smil/playlist.m3u8",
+          "quality": "720p",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "perviy-hd-plus3",
+      "name": "Первый HD",
+      "group": "Омск HD",
+      "epgId": "perviy",
+      "sources": [
+        {
+          "url": "https://edge1.1internet.tv/dash-live2/streams/1tv-dvr/1tvdash.mpd",
+          "quality": "720p",
+          "priority": 1
+        },
+        {
+          "url": "https://edge2.1internet.tv/dash-live2/streams/1tv/1tvdash.mpd",
+          "quality": "720p",
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "rossiya1-hd-plus3",
+      "name": "Россия 1 HD +3",
+      "group": "Омск HD",
+      "epgId": "russia1",
+      "sources": [
+        {
+          "url": "https://live.smotrim.ru/vgtrk/3/russia1-hd/index.m3u8",
+          "quality": "1080p",
+          "priority": 1
+        },
+        {
+          "url": "https://live.smotrim.ru/vgtrk/0/russia1-hd/index.m3u8",
+          "quality": "1080p",
+          "priority": 2
+        },
+        {
+          "url": "https://stream.smotrim.ru/hls2/russia_hd/playlist.m3u8",
+          "quality": "1080p",
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "id": "ntv-hd-plus3",
+      "name": "НТВ HD",
+      "group": "Омск HD",
+      "epgId": "ntv",
+      "sources": [
+        {
+          "url": "https://cdn.ntv.ru/ntv0_hd/playlist.m3u8",
+          "quality": "1080p",
+          "priority": 1
+        },
+        {
+          "url": "https://cdn-dvr.ntv.ru/ntv0_hd/index.m3u8",
+          "quality": "1080p",
+          "priority": 2
+        },
+        {
+          "url": "https://flussonic.linkintel.ru/ntv/index.m3u8",
+          "quality": "1080p",
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "id": "sts-hd-plus3",
+      "name": "СТС",
+      "group": "Омск HD",
+      "epgId": "ctc",
+      "sources": [
+        {
+          "url": "https://tshift-1.telecoma.tv/sts/index.m3u8",
+          "quality": "576p",
+          "priority": 1
+        },
+        {
+          "url": "https://tshift-2.telecoma.tv/sts/index.m3u8",
+          "quality": "576p",
+          "priority": 2
+        },
+        {
+          "url": "https://flussonic.linkintel.ru/sts/index.m3u8",
+          "quality": "576p",
+          "priority": 3
+        }
+      ]
+    },
+    {
+      "id": "tnt-hd-plus3",
+      "name": "ТНТ",
+      "group": "Омск HD",
+      "epgId": "tnt",
+      "sources": [
+        {
+          "url": "https://flussonic.linkintel.ru/tnt/index.m3u8",
+          "quality": "576p",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "pyatnitsa-hd-plus3",
+      "name": "Пятница",
+      "group": "Омск HD",
+      "epgId": "pyatnitsa",
+      "sources": [
+        {
+          "url": "https://vod.tuva.ru/friday/index.m3u8",
+          "quality": "576p",
+          "priority": 1
+        },
+        {
+          "url": "https://flussonic.linkintel.ru/Pyatnica/index.m3u8",
+          "quality": "576p",
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "match-tv-hd",
+      "name": "Матч ТВ",
+      "group": "Спорт",
+      "epgId": "matchtv",
+      "sources": [
+        {
+          "url": "https://fs.uplink.kz/match/index.m3u8?token=onlinetv",
+          "quality": "576p",
+          "priority": 1
+        },
+        {
+          "url": "https://fs.uplink.kz/match/mono.m3u8?token=onlinetv",
+          "quality": "576p",
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "khl-hd",
+      "name": "КХЛ",
+      "group": "Спорт",
+      "epgId": "khl",
+      "sources": [
+        {
+          "url": "https://fs.uplink.kz/telekanal_khl/index.m3u8?token=onlinetv",
+          "quality": "576p",
+          "priority": 1
+        },
+        {
+          "url": "https://fs.uplink.kz/telekanal_khl/mono.m3u8?token=onlinetv",
+          "quality": "576p",
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "khl-prime-hd",
+      "name": "KHL Prime HD",
+      "group": "Спорт",
+      "epgId": "khlprime",
+      "sources": [
+        {
+          "url": "https://fs.uplink.kz/khl_prime/index.m3u8?token=onlinetv",
+          "quality": "1080p",
+          "priority": 1
+        },
+        {
+          "url": "https://fs.uplink.kz/khl_prime/mono.m3u8?token=onlinetv",
+          "quality": "1080p",
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "rossiya-k",
+      "name": "Россия К",
+      "group": "Федеральные",
+      "sources": [
+        {
+          "url": "https://live.smotrim.ru/vgtrk/0/kultura-hd/index.m3u8",
+          "quality": "1080p",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "tvc",
+      "name": "ТВ Центр",
+      "group": "Федеральные",
+      "sources": [
+        {
+          "url": "https://tvc-hls.cdnvideo.ru/tvc-res/smil:vd9221.smil/playlist.m3u8",
+          "quality": "480p",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "zvezda",
+      "name": "Звезда",
+      "group": "Федеральные",
+      "sources": [
+        {
+          "url": "https://tvchannelstream1.tvzvezda.ru/cdn/tvzvezda/playlist.m3u8",
+          "quality": "1080p",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "2x2",
+      "name": "2x2",
+      "group": "Федеральные",
+      "sources": [
+        {
+          "url": "https://bl.rutube.ru/livestream/392b4686b770bae2da6bf5ac4574add5/index.m3u8?e=2068731801&s=tenr-yHXUv1wibfka78s2A&scheme=https",
+          "quality": "1080p",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "subbota",
+      "name": "Суббота!",
+      "group": "Федеральные",
+      "sources": [
+        {
+          "url": "https://bl.rutube.ru/livestream/310744c10a5809da38aa445c952976da/index.m3u8?e=2066519758&s=dmUf6BUQzDBTwtQOseAfog&scheme=https",
+          "quality": "1080p",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "u",
+      "name": "Ю",
+      "group": "Федеральные",
+      "sources": [
+        {
+          "url": "https://bl.rutube.ru/livestream/5c9327074e25ca86f3111d4085cbbb65/index.m3u8?e=2066519758&s=9cPc1rCGu6M932eqrifRhQ&scheme=https",
+          "quality": "720p",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "spas",
+      "name": "Спас",
+      "group": "Федеральные",
+      "sources": [
+        {
+          "url": "https://tvspas.mediacdn.ru/cdn/spas/playlist.m3u8",
+          "quality": "576p",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "spb",
+      "name": "Санкт-Петербург",
+      "group": "Федеральные",
+      "sources": [
+        {
+          "url": "https://stream.smotrim.ru/hls2/ext_spbtv/playlist_5.m3u8",
+          "quality": "1080p",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "rossiya24",
+      "name": "Россия 24",
+      "group": "Новости",
+      "sources": [
+        {
+          "url": "https://live.smotrim.ru/vgtrk/0/russia24-hd/index.m3u8",
+          "quality": "1080p",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "moskva24",
+      "name": "Москва 24",
+      "group": "Новости",
+      "sources": [
+        {
+          "url": "https://stream.smotrim.ru/hls/givc8/playlist.m3u8?entity=channel&id=798&sign=37881ef2e289f062ceff0dca6c24dc58",
+          "quality": "1080p",
+          "priority": 1
+        },
+        {
+          "url": "https://stream.smotrim.ru/hls2/moscow_24/playlist_3.m3u8",
+          "quality": "576p",
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "soloviev-live",
+      "name": "Соловьёв Live",
+      "group": "Новости",
+      "sources": [
+        {
+          "url": "https://stream.smotrim.ru/hls2/solovievlive/playlist_6.m3u8",
+          "quality": "1080p",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "tsargrad",
+      "name": "Царьград",
+      "group": "Новости",
+      "sources": [
+        {
+          "url": "https://bl.rutube.ru/livestream/91815da4edb167b5bd617bae490e57da/index.m3u8?e=2070278263&s=is_mLq_kjPYLsOJ4qj85tw&scheme=https",
+          "quality": "1080p",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "360",
+      "name": "360°",
+      "group": "Новости",
+      "sources": [
+        {
+          "url": "https://cdn-evacoder-tv.facecast.io/evacoder_hls_hi/CkxfR1xNUAJwTgtXTBZTAJli/index.m3u8",
+          "quality": "1080p",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "soyuzny",
+      "name": "Союзное ТВ",
+      "group": "Новости",
+      "sources": [
+        {
+          "url": "https://souzny.mediacdn.ru/cdn/souzny/playlist.m3u8",
+          "quality": "1080p",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "moskva-doverie",
+      "name": "Москва. Доверие",
+      "group": "Новости",
+      "sources": [
+        {
+          "url": "https://stream.smotrim.ru/hls2/doverie/playlist_3.m3u8",
+          "quality": "576p",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "karusel",
+      "name": "Карусель",
+      "group": "Детские",
+      "sources": [
+        {
+          "url": "https://stream.smotrim.ru/hls2/karusel/playlist_3.m3u8",
+          "quality": "576p",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "radost-moya",
+      "name": "Радость моя",
+      "group": "Детские",
+      "sources": [
+        {
+          "url": "https://radm.mediacdn.ru/cdn/radost/playlist_sdhigh.m3u8",
+          "quality": "576p",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "smile-tv",
+      "name": "Смайлик ТВ",
+      "group": "Детские",
+      "sources": [
+        {
+          "url": "https://5d23269b3ec0c.streamlock.net/WEB_Smilik/ngrp:Smilik.stream-adaptive/playlist.m3u8",
+          "quality": "720p",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "rutv",
+      "name": "RU.TV",
+      "group": "Музыка",
+      "sources": [
+        {
+          "url": "https://bl.rutube.ru/livestream/b1eb8e90d7e636677b3eb73b4fcbb717/index.m3u8?e=2069285076&s=d-E-bxKy2v3EEJ94RQX9CA&scheme=https",
+          "quality": "1080p",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "muz-soyuz",
+      "name": "Муз Союз",
+      "group": "Музыка",
+      "sources": [
+        {
+          "url": "https://hls-tvsoyuz.cdnvideo.ru/tvsoyuz2/muzsoyuz.6fw0-58xp-acts-esy0/playlist.m3u8",
+          "quality": "1080p",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "prima",
+      "name": "Прима",
+      "group": "Кино и сериалы",
+      "sources": [
+        {
+          "url": "https://tele2dvrnat01-02.cdnvideo.ru/stream/NAT_Prima/hls/index.m3u8",
+          "quality": "1080p",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "solntse",
+      "name": "Солнце",
+      "group": "Кино и сериалы",
+      "sources": [
+        {
+          "url": "https://tv.mediacdn.ru/live/solntse/playlist.m3u8",
+          "quality": "576p",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "univer",
+      "name": "Univer TV",
+      "group": "Кино и сериалы",
+      "sources": [
+        {
+          "url": "https://cdn.universmotri.ru/live/smil:univer.smil/playlist.m3u8",
+          "quality": "1080p",
+          "priority": 1
+        },
+        {
+          "url": "https://cdn.universmotri.ru/live/smil:mbr.smil/playlist.m3u8",
+          "quality": "1080p",
+          "priority": 2
+        }
+      ]
+    },
+    {
+      "id": "moy-mir",
+      "name": "Мой мир",
+      "group": "Кино и сериалы",
+      "sources": [
+        {
+          "url": "https://moymir.ru/hls/onair.m3u8",
+          "quality": "720p",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "tnv",
+      "name": "ТНВ Татарстан",
+      "group": "Регионы",
+      "sources": [
+        {
+          "url": "https://user91229.clients-cdnnow.ru/hls/user91229_1.m3u8",
+          "quality": "720p",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "enisey",
+      "name": "Енисей",
+      "group": "Регионы",
+      "sources": [
+        {
+          "url": "https://hls-eniseytv.cdnvideo.ru/eniseytv/stream1/playlist.m3u8",
+          "quality": "1080p",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "s1-surgut",
+      "name": "С1 Сургут",
+      "group": "Регионы",
+      "sources": [
+        {
+          "url": "https://sitv.ru/hls/stv.m3u8",
+          "quality": "1080p",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "samara-gis",
+      "name": "Самара ГИС",
+      "group": "Регионы",
+      "sources": [
+        {
+          "url": "https://tv.samaragis.ru/new/new/tracks-v1a1/mono.m3u8",
+          "quality": "1080p",
+          "priority": 1
+        }
+      ]
+    },
+    {
+      "id": "evraziya-orsk",
+      "name": "Евразия Орск",
+      "group": "Регионы",
+      "sources": [
+        {
+          "url": "https://infochh.trkeurasia.ru/hlsinfoch/infochhd.m3u8",
+          "quality": "720p",
+          "priority": 1
+        }
+      ]
+    }
   ]
 }
